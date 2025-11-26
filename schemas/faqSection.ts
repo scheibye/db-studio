@@ -37,6 +37,14 @@ const faqSection = {
       ],
     },
   ],
+  preview: {
+  select: { title: "title" },
+  prepare({ title }: { title?: string }) {
+    return {
+      title: `FAQ – ${title || "Uden titel"}`,
+    };
+  },
+},
 };
 
 export default faqSection;

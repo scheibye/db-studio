@@ -42,6 +42,14 @@ const stepsSection = {
       ],
     },
   ],
+  preview: {
+  select: { title: "title" },
+  prepare({ title }: { title?: string }) {
+    return {
+      title: `Steps – ${title || "Uden titel"}`,
+    };
+  },
+},
 };
 
 export default stepsSection;

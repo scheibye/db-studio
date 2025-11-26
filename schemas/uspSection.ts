@@ -40,6 +40,14 @@ const uspSection = {
       ],
     },
   ],
+  preview: {
+  select: { title: "title" },
+  prepare({ title }: { title?: string }) {
+    return {
+      title: `USP – ${title || "Uden titel"}`,
+    };
+  },
+},
 };
 
 export default uspSection;

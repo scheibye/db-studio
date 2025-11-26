@@ -20,6 +20,15 @@ const heroSection = {
       type: "string",
     },
   ],
+ preview: {
+  select: { title: "title" },
+  prepare({ title }: { title?: string }) {
+    return {
+      title: `Hero – ${title || "Uden titel"}`,
+    };
+  },
+},
+
 };
 
 export default heroSection;

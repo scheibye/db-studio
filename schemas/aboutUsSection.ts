@@ -20,6 +20,11 @@ export default {
     },
   ],
   preview: {
-    select: { title: "title" },
+  select: { title: "title" },
+  prepare({ title }: { title?: string }) {
+    return {
+      title: `Om os – ${title || "Uden titel"}`,
+    };
   },
+},
 };

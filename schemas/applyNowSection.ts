@@ -13,6 +13,11 @@ export default {
     { name: "ctaHref", title: "Knap link", type: "string" },
   ],
   preview: {
-    select: { title: "title" },
+  select: { title: "title" },
+  prepare({ title }: { title?: string }) {
+    return {
+      title: `Ansøg nu – ${title || "Uden titel"}`,
+    };
   },
+},
 };
