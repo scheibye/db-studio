@@ -26,6 +26,8 @@ const page = {
       of: [
         { type: "heroSection" },
         { type: "uspSection" },
+        { type: "stepsSection" },
+        { type: "faqSection" },
         // flere sektionstyper kommer senere
       ],
     },

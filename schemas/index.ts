@@ -1,6 +1,8 @@
 import page from "./page";
 import heroSection from "./heroSection";
 import uspSection from "./uspSection";
+import stepsSection from "./stepsSection";
+import faqSection from "./faqSection";
 import seo from "./seo";
 import settings from "./settings";
 
@@ -13,6 +15,8 @@ export const schemaTypes = [
   page,
   heroSection,
   uspSection,
+  stepsSection,
+  faqSection,
   seo,
   settings,
   // Tilføj evt. blog schemas her senere:
