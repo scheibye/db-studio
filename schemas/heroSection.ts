@@ -4,20 +4,10 @@ const heroSection = {
   type: "object",
   fields: [
     {
-      name: "eyebrow",
-      title: "Overlinje (lille tekst over overskrift)",
-      type: "string",
-    },
-    {
       name: "title",
       title: "Overskrift",
       type: "string",
       validation: (Rule: any) => Rule.required(),
-    },
-    {
-      name: "subtitle",
-      title: "Underoverskrift",
-      type: "text",
     },
     {
       name: "primaryCtaLabel",

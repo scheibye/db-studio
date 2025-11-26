@@ -10,6 +10,12 @@ const stepsSection = {
       description: "Fx 'Sådan foregår det'",
     },
     {
+      name: "subtitle",
+      title: "Undertitel",
+      type: "string",
+      description: "Fx 'Det er nemt at komme i gang'",
+    },
+    {
       name: "steps",
       title: "Steps",
       type: "array",
