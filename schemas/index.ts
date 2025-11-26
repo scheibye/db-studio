@@ -3,6 +3,12 @@ import heroSection from "./heroSection";
 import uspSection from "./uspSection";
 import stepsSection from "./stepsSection";
 import faqSection from "./faqSection";
+import trustpilotSection from "./trustpilotSection";
+import applyNowSection from "./applyNowSection";
+import aboutUsSection from "./aboutUsSection";
+import ctaProductsSection from "./ctaProductsSection";
+import blogPostSection from "./blogPostSection";
+import videoSection from "./videoSection";
 import seo from "./seo";
 import settings from "./settings";
 
@@ -17,6 +23,12 @@ export const schemaTypes = [
   uspSection,
   stepsSection,
   faqSection,
+  trustpilotSection,
+  applyNowSection,
+  aboutUsSection, 
+  ctaProductsSection, 
+  blogPostSection,
+  videoSection,
   seo,
   settings,
   // Tilføj evt. blog schemas her senere:

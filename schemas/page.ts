@@ -28,6 +28,11 @@ const page = {
         { type: "uspSection" },
         { type: "stepsSection" },
         { type: "faqSection" },
+        { type: "aboutUsSection" },
+        { type: "applyNowSection" },
+        { type: "blogPostSection" },
+        { type: "ctaProductsSection" },
+        { type: "videoSection" },
         // flere sektionstyper kommer senere
       ],
     },
