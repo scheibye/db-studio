@@ -28,6 +28,7 @@ const page = {
         { type: "uspSection" },
         { type: "stepsSection" },
         { type: "faqSection" },
+        { type: "trustpilotSection" },
         { type: "aboutUsSection" },
         { type: "applyNowSection" },
         { type: "blogPostSection" },
