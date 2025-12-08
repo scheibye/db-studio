@@ -11,11 +11,6 @@ export default defineConfig({
   projectId: 'xtu7sfpe',
   dataset: 'production',
 
-  document: {
-    // Disable new document options for siteSettings
-    newDocumentOptions: (prev) => prev.filter((item) => item.templateId !== 'siteSettings'),
-  },
-
   schema: {
     types: schema.types,
   },
