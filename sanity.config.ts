@@ -1,7 +1,8 @@
-import {defineConfig} from 'sanity'
-import {structureTool} from 'sanity/structure'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemas'
+import { defineConfig } from 'sanity'
+import { structureTool } from 'sanity/structure'
+import { visionTool } from '@sanity/vision'
+import { schema } from './schemaTypes'
+import { structure } from './structure'
 
 export default defineConfig({
   name: 'default',
@@ -10,9 +11,18 @@ export default defineConfig({
   projectId: 'xtu7sfpe',
   dataset: 'production',
 
-  plugins: [structureTool(), visionTool()],
+  document: {
+    // Disable new document options for siteSettings
+    newDocumentOptions: (prev) => prev.filter((item) => item.templateId !== 'siteSettings'),
+  },
 
   schema: {
-    types: schemaTypes,
+    types: schema.types,
   },
+
+  // prettier-ignore
+  plugins: [
+    structureTool({ structure }),
+    visionTool(),
+  ],
 })
