@@ -23,6 +23,7 @@ export const pageType = defineType({
     defineField({
       name: 'slug',
       title: 'Slug',
+      description: 'This field will be used for querying the page content in Next.js',
       type: 'slug',
       group: 'meta',
       options: {
@@ -34,6 +35,7 @@ export const pageType = defineType({
     defineField({
       name: 'content',
       type: 'pageBuilder',
+      description: 'Sections that will be displayed on this page',
       group: 'content',
       validation: (Rule) => Rule.required(),
     }),
