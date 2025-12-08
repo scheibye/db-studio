@@ -19,6 +19,7 @@ export const footerType = defineType({
       title: 'Left side content',
       type: 'object',
       group: 'left',
+      validation: (Rule) => Rule.required(),
 
       fields: [
         defineField({
@@ -38,6 +39,7 @@ export const footerType = defineType({
       title: 'Right side content',
       type: 'object',
       group: 'right',
+      validation: (Rule) => Rule.required(),
 
       fields: [
         defineField({

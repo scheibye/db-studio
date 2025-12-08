@@ -19,6 +19,8 @@ export const siteSettingsType = defineType({
       title: 'General information',
       type: 'object',
       group: 'general',
+      validation: (Rule) => Rule.required(),
+
       fields: [
         defineField({
           name: 'siteTitle',
@@ -62,12 +64,14 @@ export const siteSettingsType = defineType({
       name: 'header',
       type: 'header',
       group: 'header',
+      validation: (Rule) => Rule.required(),
     }),
 
     defineField({
       name: 'footer',
       type: 'footer',
       group: 'footer',
+      validation: (Rule) => Rule.required(),
     }),
   ],
 
