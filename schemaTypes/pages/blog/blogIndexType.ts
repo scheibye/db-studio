@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'sanity'
+import { defineArrayMember, defineField, defineType } from 'sanity'
 import { DocumentsIcon } from '@sanity/icons'
 
 export const blogIndexType = defineType({
@@ -39,6 +39,19 @@ export const blogIndexType = defineType({
       name: 'button',
       type: 'ctaButton',
       validation: (Rule) => Rule.required(),
+    }),
+
+    defineField({
+      name: 'content',
+      type: 'array',
+      of: [
+        defineArrayMember({ type: 'ctaVideoSection' }),
+        defineArrayMember({ type: 'ctaSmallSection' }),
+        defineArrayMember({ type: 'ctaImageSection' }),
+        defineArrayMember({ type: 'ctaImagePatternSection' }),
+        defineArrayMember({ type: 'ctaTelSection' }),
+      ],
+      validation: (Rule) => Rule.required().max(1),
     }),
   ],
 
