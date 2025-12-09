@@ -22,7 +22,7 @@ export const headerType = defineType({
     defineField({
       name: 'ctaButton',
       title: 'CTA Button',
-      type: 'url',
+      type: 'ctaButton',
       validation: (Rule) => Rule.required().uri({ allowRelative: true }),
     }),
   ],

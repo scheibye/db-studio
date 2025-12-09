@@ -20,5 +20,6 @@ export const pageBuilderType = defineType({
     defineArrayMember({ type: 'textWithVideoSection' }),
     defineArrayMember({ type: 'missionSection' }),
     defineArrayMember({ type: 'teamSection' }),
+    defineArrayMember({ type: 'blogSection' }),
   ],
 })
