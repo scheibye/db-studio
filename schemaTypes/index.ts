@@ -1,4 +1,5 @@
 import { aboutSectionType } from './blocks/aboutSectionType'
+import { blogSectionType } from './blocks/blogSectionType'
 import { ctaImagePatternSectionType } from './blocks/cta/ctaImagePatternSectionType'
 import { ctaImageSectionType } from './blocks/cta/ctaImageSectionType'
 import { ctaSmallSectionType } from './blocks/cta/ctaSmallSectionType'
@@ -62,6 +63,7 @@ export const schema: { types: Array<SchemaTypeDefinition> } = {
     textWithVideoSectionType,
     missionSectionType,
     teamSectionType,
+    blogSectionType,
 
     // Site settings
     siteSettingsType,
